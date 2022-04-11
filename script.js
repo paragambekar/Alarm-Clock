@@ -115,7 +115,7 @@ form.addEventListener('click', (e) => {
         document.querySelector('#second').value = "";
 
         if(alarmArray.includes(time)){
-            showAlertMessage('Alarm already present','success');
+            showAlertMessage('Alarm Already Present','success');
             return;
         }
         alarmArray.push(time);
