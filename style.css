@@ -1,0 +1,158 @@
+
+body{
+    margin:0px;
+    padding: 0px;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 21, 27);
+    font-family: 'Courier Prime', monospace;
+    color: antiquewhite;
+    
+}
+
+#clock{
+    width: 90vw;
+    height: 90vw;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradient{
+    background: -webkit-linear-gradient(5deg,#ff1b6b,#45caff);
+    -webkit-background-clip: text;
+    /* background-clip: initial; */
+    -webkit-text-fill-color: transparent;
+}
+
+#time{
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vw;
+}
+
+#time .box{
+    height: 75px;
+    width: 75px;
+    margin: 4px;
+}
+
+.set_alarm,.stop_alarm,.del_alarm{
+    appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 45%;
+}
+
+.stop_alarm{
+    background-color: #f80759;
+}
+
+.del_alarm{
+    min-width: 20%;
+    max-width: 30%;
+    font-weight: 200;
+    font-size: 12px;
+    padding: 8px 2px;
+    background-color: #f30928;
+    
+}
+
+.alarm{
+    font-size: 1.2rem;
+}
+
+
+form{
+    text-align: center;
+    font-size: 35px;
+}
+
+input[type = "number"],select{
+    height: 3.5rem;
+    width: 3.8rem;
+    margin: 1.2rem 0rem;
+    padding: 0.5rem;
+    font-size: 28px;
+    background-color: transparent;
+    color: antiquewhite;
+    font-family: 'Courier Prime', monospace;
+    outline: none;
+    border-radius: 10px;
+    
+}
+
+select{
+    margin-left: 24px;
+    color:slategray;
+    height: 4.5rem;
+    width: 4.7rem;
+}
+
+
+#alarm-list{
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
+    padding: 4px;
+}
+
+.alarm-style{
+    width: 60vw;
+    height: 40px;
+    margin: 3px;
+    padding: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline ;
+}
+
+.message{
+    text-align: center;
+    height: 30px;
+    font-size: 25px;
+    padding: 2px;
+    border-radius: 10px;
+    color: rgb(2, 49, 95);
+}
+
+.success{
+    background-color: rgb(0, 255, 21);
+}
+
+.danger{
+    background-color: red;
+    color: beige;
+}
+
+
+

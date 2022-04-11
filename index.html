@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+
+    <!-- Link stylesheet  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon  -->
+    <link rel="icon" type="image/x-icon" href="/images/favi.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Main clock Div  -->
+    <div id="clock">
+
+        <!-- Div to display current time  -->
+        <div id="time">
+
+        </div>
+
+        <!-- Div to set alarm  -->
+        <div id="set-alarm">
+
+            <!-- Form to take input for the alarms  -->
+            <form>
+                
+                <input type="number" id="hour" name="hour" min="1" max="12" placeholder="HH" required> :
+                <input type="number" id="minute" name="minute" min="0" max="59" placeholder="MM" required> :
+                <input type="number" id="second" name="sec" min="0" max="59" placeholder="SS" required>
+                <select id="dayNight" name="dayNight">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+                <div>
+                    <button  type="submit" class="set_alarm"type="submit">Set Alarm</button>
+                    <button class="stop_alarm">Stop Alarm</button>
+                </div>
+            
+            </form>
+        </div>
+
+        <!-- Div to display the alarms list  -->
+        <div id="alarm-list">
+          
+        </div>
+
+
+    </div>
+    <!-- End of clock div  -->
+
+   
+
+
+    <!-- Link JavaScript to add functionalities to the page   -->
+    <script src="script.js"></script>
+</body>
+</html>
